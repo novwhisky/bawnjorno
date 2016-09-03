@@ -14,9 +14,9 @@ function cleanup() {
   bon.unpublishAll(function() {
     console.info('bonjour closed');
     bon.destroy();
+    console.info('server closed');
+    process.exit();
   });
-  console.info('server closed');
-  process.exit();
 }
 
 http.listen(options.p, options.a, function() {
@@ -36,4 +36,5 @@ http.listen(options.p, options.a, function() {
 
   svc.start();
 
+  console.log('Serving ' + options.a + ':' + svc.port + ' to ' + svc.host);
 });
