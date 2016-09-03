@@ -29,7 +29,7 @@ http.listen(options.p, options.a, function() {
   });
 
   var svc = bon.publish({
-    name: 'bonjour-http-server',
+    name: 'bawnjorno',
     type: 'http',
     port: options.p
   });
