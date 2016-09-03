@@ -12,9 +12,9 @@ var http = srv.createServer(options);
 
 function cleanup() {
   bon.unpublishAll(function() {
-    console.info('bonjour closed');
+    http.close();
     bon.destroy();
-    console.info('server closed');
+    console.info('disconnected');
     process.exit();
   });
 }
@@ -36,5 +36,5 @@ http.listen(options.p, options.a, function() {
 
   svc.start();
 
-  console.log('Serving ' + options.a + ':' + svc.port + ' to ' + svc.host);
+  console.log('serving ' + options.a + ':' + svc.port + ' to ' + svc.host);
 });
