@@ -1,16 +1,19 @@
 {
   "name": "bawnjorno",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A CLI to add Bonjour support to any *nix process",
+  "main": "./lib/bawnjorno.js",
+  "bin": "./bin/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nathan Witt <wittnl@gmail.com> (http://wi.tt/)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bonjour": "^3.5.0",
-    "http-server": "^0.9.0",
     "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
   }
 }
