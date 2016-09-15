@@ -1,6 +1,6 @@
 {
   "name": "bawnjorno",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI to add Bonjour support to any *nix process",
   "main": "./lib/bawnjorno.js",
   "bin": "./bin/index.js",
