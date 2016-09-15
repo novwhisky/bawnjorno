@@ -13,6 +13,7 @@
     "bonjour": "^3.5.0",
     "minimist": "^1.2.0"
   },
+  "repository": "wittnl/bawnjorno",
   "devDependencies": {
     "http-server": "^0.9.0"
   }

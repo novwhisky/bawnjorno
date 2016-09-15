@@ -13,6 +13,7 @@ Mostly just passing configurations along to [bonjour](https://www.npmjs.com/pack
 **Required**
 
 `-p`, `--port` Port number
+
 `-t`, `--type` The type of [Bonjour service](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
 
 **Optional**
